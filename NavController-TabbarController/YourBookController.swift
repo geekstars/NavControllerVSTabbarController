@@ -15,11 +15,26 @@ class YourBookController: BaseViewController {
 
         // Do any additional setup after loading the view.
 
+        
+        let cameraButtonItem = UIBarButtonItem(barButtonSystemItem: .Camera, target: self, action: #selector(takeAPicture))
+        cameraButtonItem.tintColor = UIColor.whiteColor()
+        
+        let rightButton = UIBarButtonItem(image: UIImage(named: "EMAIL")?.imageWithRenderingMode(.AlwaysOriginal), style: .Plain, target: self, action: #selector(sendEmail))
+        
+        navigationItem.setLeftBarButtonItems([cameraButtonItem,rightButton], animated: true)
+        //navigationItem.rightBarButtonItem = rightButton
     }
-
+    func takeAPicture(sender: AnyObject)
+    {
+        print("Taking a picture")
+    }
+    func sendEmail(sender: AnyObject)
+    {
+        print("Sending Email")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+ 
     }
 
 }

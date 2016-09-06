@@ -32,8 +32,8 @@ class CustomButton: UIButton {
         
         self.titleLabel?.font = UIFont.init(name: "SFUIText-Medium", size: 20)
         self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        backgroundColor = UIColor.init(red: 47/255, green: 129/255, blue: 183/255, alpha: 1)
-        
+//        backgroundColor = UIColor.init(red: 47/255, green: 129/255, blue: 183/255, alpha: 1)
+        backgroundColor = UIColor.init(red: 17/255, green: 129/255, blue: 129/255, alpha: 1)
         layer.cornerRadius = 4.0
     }
 }
