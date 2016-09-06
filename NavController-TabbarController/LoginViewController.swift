@@ -28,6 +28,9 @@ class LoginViewController: BaseViewController {
         updateContraint(LogoToTopViewContraint)
         
         createUser()
+        tranparent = true
+        
+        setTitleForBackButton("Trở lại")
     }
     
     @IBAction func signUpAction(sender: AnyObject) {
